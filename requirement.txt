@@ -5,4 +5,5 @@ torchaudio
 transformers
 accelerate
 pillow
+fastapi
 num2words
