@@ -9,6 +9,8 @@ processor = AutoProcessor.from_pretrained(model_path)
 model = AutoModelForImageTextToText.from_pretrained(
     model_path,
     torch_dtype=torch.float32, # CPUs generally prefer float32 over bfloat16
+    low_cpu_mem_usage=True, # Added this
+    device_map="cpu"
 ).to("cpu")
 print("Loaded Model to the cpu.")
 
