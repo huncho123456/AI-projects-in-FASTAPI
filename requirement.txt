@@ -1,0 +1,8 @@
+numpy<2.0.0
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+pillow
+num2words
