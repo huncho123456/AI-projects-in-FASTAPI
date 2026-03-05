@@ -1,9 +1,22 @@
-numpy<2.0.0
-torch
-torchvision
-torchaudio
-transformers
-accelerate
-pillow
-fastapi
+# Use the CPU-specific index for a much faster, smaller build
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Core ML (CPU versions)
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
+
+# SmolVLM2 & AI Helpers
+transformers>=4.49.0
+accelerate>=1.1.0
+pillow>=10.0.0
 num2words
+
+# API Framework
+fastapi>=0.115.0
+uvicorn[standard]
+pydantic>=2.0
+python-multipart
+
+# Compatibility
+numpy<2.0.0
